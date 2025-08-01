@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CarroServiceApplication<carro-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.carro.service.carro_service.CarroServiceApplication",
+            "projectName": "carro-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61725 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=carro-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MotoServiceApplication<moto-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.moto.service.moto_service.MotoServiceApplication",
+            "projectName": "moto-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=61729 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=moto-service"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-UsuarioServiceApplication<usuario-service>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.usuario.service.usuario_service.UsuarioServiceApplication",
+            "projectName": "usuario-service",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
